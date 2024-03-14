@@ -15,8 +15,9 @@ jobs:
 
     steps:
       - name: digger run
-        uses: diggerhq/digger@v0.1.21
+        uses: diggerhq/digger@v0.4.6
         with:
+          no-backend: true
           setup-aws: true
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
